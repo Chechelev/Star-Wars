@@ -1,0 +1,18 @@
+@import '../../styles/colors.scss';
+
+.comment {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  width: 200px;
+  max-width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: #ffff00;
+  text-shadow: 3px 1px 2px #ee1818;
+  transform: translate(-50%, -50%);
+  -webkit-text-stroke: #ee1818;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-fill-color: transparent;
+}

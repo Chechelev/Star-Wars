@@ -1,0 +1,60 @@
+@import '@styles/colors.scss';
+
+.list {
+  &__container {
+    margin: $spacing-medium 0;
+    padding: 0;
+    column-count: 3;
+    list-style-type: none;
+  }
+
+  &__item {
+
+    & a {
+      display: inline-flex;
+      margin: $spacing-small 0;
+      color: $color--black;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+
+
+}
+
+.person {
+  &__img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: $border-radius-small;
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0 $spacing-small;
+    color: $color--white;
+    text-shadow: $text-shadow-blue;
+  }
+}
+
+@media screen and (max-width:850px) {
+  .list {
+    &__container {
+      column-count: 2;
+    }
+  }
+}
+
+@media screen and (max-width:500px) {
+  .list {
+    &__container {
+      column-count: 1;
+      justify-content: center;
+    }
+  }
+}

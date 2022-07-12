@@ -1,0 +1,48 @@
+@import '../../../styles/colors.scss';
+
+.wrapper {
+  margin-left: $spacing-large;
+  padding: $spacing-medium 0;
+}
+
+.list {
+  &__container {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: $spacing-small;
+    color: $color--white;
+  }
+}
+
+.item {
+  &__episode {
+    padding: $spacing-ultrasmall;
+    border-radius: $border-radius-small;
+    background-color: $color-red;
+
+  }
+
+  &__colon {
+    width: 20px;
+    font-weight: $font-bold;
+    text-align: center;
+
+  }
+
+  &__title {
+    text-shadow: $text-shadow-yellow;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper{
+    width: 100%;
+    margin: 0;
+  }
+}

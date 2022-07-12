@@ -1,0 +1,29 @@
+@import '../../styles/colors.scss';
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  width: 500px;
+  max-width: 100%;
+  text-align: center;
+  font-size: $font--size--error;
+  color: $color--yellow;
+  text-shadow: 3px 1px 2px #ee1818;
+  transform: translate(-50%, -50%);
+
+  -webkit-text-stroke: #ee1818;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-fill-color: transparent;
+}
+
+.video {
+  display: block;
+  margin: 0 auto;
+  margin-top: $spacing-large;
+  margin-bottom: $spacing-large;
+
+  border-radius: $border-radius-small;
+  box-shadow: $box-shadow-white;
+}

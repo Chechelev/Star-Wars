@@ -1,0 +1,46 @@
+@import '../index.scss';
+
+.button {
+  min-width: 100px;
+  padding: 10px;
+  border-radius: $border-radius-small;
+
+  font-size: $font-size-small;
+  font-family: $font-family-main;
+  font-weight: $font-weight-bold;
+
+  background: none;
+  outline: none;
+
+  transition: all .4s;
+
+  cursor: pointer;
+
+  &:disabled,
+  &:disabled:hover {
+    color: $color-grey;
+    border-color: $color-grey;
+    background-color: transparent;
+    cursor: auto;
+  }
+}
+
+.dark {
+  border: 1px solid $color-white;
+  color: $color-white;
+
+  &:hover {
+    background-color: $color-white;
+    color: $color-black;
+  }
+}
+
+.light {
+  border: 1px solid $color-black;
+  color: $color-black;
+
+  &:hover {
+    background-color: $color-black;
+    color: $color-white;
+  }
+}
