@@ -1,3 +1,5 @@
+## Link to the site https://star-of-wars.netlify.app/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
